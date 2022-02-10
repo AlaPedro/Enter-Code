@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Enter Code</title>
+</head>
+<body>
+    <div class="fundo">
+        <h1 class="title">Arquivo altamente confidencial!</h1>
+
+        <div class="closedOpen">
+            <p id="closedOpen">Acesso NEGADO</p>
+        </div>
+        <img id="img-scarry" src="/img/imgHr.jpg" alt="">
+
+        <div class="acesso-btn">
+            <button id="buttonEnter-acesso" class="buttonEnter-acesso" >Seguir para o arquivo</button>
+        </div>
+ 
+        <div id="password-content" class="password-content">
+            <h2 class="password-title">Digite a senha correta</h2>
+
+            <p id="password"></p>
+
+            <div class="password-grid">
+                <button class="button" onclick="insert(1); playAudioTe()">1</button>
+                <button class="button" onclick="insert(2); playAudioTe()">2</button>
+                <button class="button" onclick="insert(3); playAudioTe()">3</button>
+                <button class="button" onclick="insert(4); playAudioTe()">4</button>
+                <button class="button" onclick="insert(5); playAudioTe()">5</button>
+                <button class="button" onclick="insert(6); playAudioTe()">6</button>
+                <button class="button" onclick="insert(7); playAudioTe()">7</button>
+                <button class="button" onclick="insert(8); playAudioTe()">8</button>
+                <button class="button" onclick="insert(9); playAudioTe()">9</button>
+            </div>
+            <button class="button0" onclick="insert(0); playAudioTe()">0</button>
+            <button class="buttonEnter" onclick="checkPassword(); playAudioTe()">Enter</button>
+        </div>
+            <audio id="audioTecla" src="/aud/teclaSound.mp3"></audio>
+            <audio id="audioScream" src="/aud/scream.mp3"></audio>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
