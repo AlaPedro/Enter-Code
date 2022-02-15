@@ -10,7 +10,7 @@
         audio.play()
     }
 
-    function playAudioTe(){
+    function playAudioScream(){
         var audioScream = document.getElementById("audioScream");
         audio.currentTime = 0.02
         audioScream.play()
